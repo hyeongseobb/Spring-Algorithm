@@ -4,19 +4,15 @@ public class Java6 {
 		
 		int a = 3;
 		int b = 10;
-		double c = (double)a / (double)b;
-		 
+		double c = (double)b/(double)a;
+		
 		System.out.println (c);
 		
-		int d = 10;
-		d++;
-		System.out.println (d);
+		short g = 3;
+		int h;
+		h = g;
 		
-		int f = 10;
-		++f;
-		System.out.println (f);
-		
-		int e = 10 + d++;
-		System.out.println (e);
+		System.out.println (g);
+		System.out.println ();
  }
 }
