@@ -10,7 +10,7 @@ public class Java1_100Sum {
 		}
 		System.out.println("1부터 100까지의 합은 : " + sum0);
 		
-	//홀수의 합
+	/*홀수의 합
 		int sum1 = 0;
 		for(int i = 0; i < 101; i++) {
 			if(i % 2 == 1) {
@@ -29,6 +29,19 @@ public class Java1_100Sum {
 				sum2 = sum2 + i;
 			}
 		}
+		System.out.println("1부터 100까지 짝수의 합은 : " + sum2);*/
+		
+		int sum1 = 0;
+		int sum2 = 0;
+		for(int i = 0; i < 101; i++) {
+			if(i % 2 == 1) {
+				sum1 = sum1 + i;
+			}
+			else if(i % 2 == 0) {
+				sum2 = sum2 + i;
+			}
+		}
+		System.out.println("1부터 100까지 홀수의 합은 : " + sum1);
 		System.out.println("1부터 100까지 짝수의 합은 : " + sum2);
 	}
 }
