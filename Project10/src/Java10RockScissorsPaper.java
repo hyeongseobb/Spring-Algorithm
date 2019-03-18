@@ -9,7 +9,8 @@ public class Java10RockScissorsPaper {
 		
 		Random r = new Random();
 		int computer = r.nextInt(3);
-	
+		String Data[] = {"가위", "바위", "보"};
+		
 		Scanner s = new Scanner(System.in);
 		int user = s.nextInt();
 		
@@ -34,6 +35,6 @@ public class Java10RockScissorsPaper {
 		else if(computer == 2 && user == 1 ) {
 			System.out.println("컴퓨터가 이겼습니다.");
 		}
-		System.out.println(computer);
+		System.out.printf("컴퓨터는 %d를 냈습니다.", Data[computer]);
 	}
 }
