@@ -5,7 +5,7 @@ public class JavaArrayQuiz {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		int [] grades = new int[3];
-		
+	
 		//성적을 입력받기
 		for(int i = 0; i < grades.length; i++) {
 			System.out.println("국어 점수를 넣어주세요");
