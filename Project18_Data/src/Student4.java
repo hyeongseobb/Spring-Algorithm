@@ -8,6 +8,7 @@ public class Student4 {
 	public void inputData() {
 		Scanner sc = new Scanner(System.in);
 		String tmp;
+		System.out.print("학생이름 : ");
 		tmp = sc.nextLine();
 		System.out.print("중간고사 점수 : ");
 		tmp = sc.nextLine();

@@ -13,10 +13,10 @@ public class runClass4 {
 			sArray[i].inputData();
 			
 			midSum = midSum + sArray[i].midScore;
-			midAvg = midSum / sArray.length; 
+			midAvg = midSum / sArray.length;
 		
 			finalSum = finalSum + sArray[i].finalScore;
-			finalAvg = finalSum / sArray.length; 
+			finalAvg = finalSum / sArray.length;
 		}
 
 		System.out.println("\n" + "전체 학생의 중간고사의 합 : " + midSum);
