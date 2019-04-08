@@ -9,22 +9,13 @@ public class JavaDiceIf {
 		System.out.println(dice);
 		
 		if(dice == 1) {
-			System.out.println("港港");
+			System.out.println("氅嶋⿳");
 		}
 		else if(dice == 2) {
-			System.out.println("具克");
-		}
-		else if(dice == 3) {
-			System.out.println("3");
-		}
-		else if(dice == 4) {
-			System.out.println("4");
-		}
-		else if(dice == 5) {
-			System.out.println("5");
+			System.out.println("鞎检樄");
 		}
 		else {
-			System.out.println("6");
+			System.out.println(dice);
 		}
 	}
 }

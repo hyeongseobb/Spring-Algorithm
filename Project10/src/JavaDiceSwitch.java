@@ -9,9 +9,9 @@ public class JavaDiceSwitch {
 		System.out.println(dice);
 		
 		switch (dice) {
-		case 1: System.out.println("港港");
+		case 1: System.out.println("氅嶋⿳");
 			break;
-		case 2: System.out.println("具克");
+		case 2: System.out.println("鞎检樄");
 			break;	
 		case 3: System.out.println(3);
 			break;

@@ -21,8 +21,7 @@ public class JavaScore3 {
 		
 		System.out.println("총점은 " + totalScore + "입니다.");
 		
-		double averageScore = 0;
-		averageScore = (double)totalScore / 3; //double로 형변환!
+		double averageScore = (double)totalScore / 3; //double로 형변환!
 		
 		System.out.println("평균은 " + averageScore + "입니다.");
   }

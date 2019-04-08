@@ -9,25 +9,24 @@ public class javaRandomPrint {
 		int randomValue2 = r.nextInt(100);
 
 		System.out.println(randomValue);
-		// System.out.println("³ª¸ÓÁö :"+ (randomValue % 2));
 		System.out.println(randomValue2);
 		
 		if(randomValue > randomValue2) {
-			System.out.println("Ã¹¹øÂ°°¡ ½Â¸®\t" + randomValue);
+			System.out.println("ë” í° ê°’ì€ : " + randomValue);
 		}
 		else if(randomValue == randomValue2) {
-			System.out.println("¹«½ÂºÎ");
+			System.out.println("ë‘ ê°’ì€ ê°™ë‹¤.");
 		}
 		else {
-			System.out.println("µÎ¹øÂ°°¡ ½Â¸®\t" + randomValue2);
+			System.out.println("ë” í° ê°’ì€ : " + randomValue2);
 		}
 		
-		System.out.println("¼ıÀÚ¸¦ ÀÔ·ÂÇÏ½Ã¿À");
+		System.out.println("ìˆ«ì í•˜ë‚˜ ì…ë ¥í•´ì£¼ì‹œì˜¤.");
 		
 		Scanner s = new Scanner(System.in);
 		int inputNumber = s.nextInt();
 		
-		System.out.printf("´ç½ÅÀÌ ÀÔ·ÂÇÑ °ªÀº %dÀÔ´Ï´Ù.", inputNumber);
+		System.out.printf("ì…ë ¥í•œ ìˆ«ìëŠ” : %d", inputNumber);
 		
 	}
 }

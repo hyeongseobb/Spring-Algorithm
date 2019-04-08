@@ -2,26 +2,24 @@
 
 public class Java5 {
 	public static void main(String[] args) {
-		System.out.println("¼ıÀÚ¸¦ ÀÔ·ÂÇØÁÖ¼¼¿ä!");
+		System.out.println("ìˆ«ìë¥¼ ì…ë ¥í•´ì£¼ì„¸ìš”");
 		
 		Scanner scan1 = new Scanner(System.in);
 		int number1 = scan1.nextInt();
 		int sumNumber = number1 + 10;
-		/*System.out.println("ÀÔ·Â¹ŞÀº ¼ıÀÚ +10Àº");
-		System.out.println(sumNumber);
-		System.out.println("ÀÔ´Ï´Ù.");
-		*/
-		System.out.printf("ÀÔ·Â¹ŞÀº ¼ıÀÚ +10Àº %dÀÔ´Ï´Ù.", sumNumber);
+
+		System.out.printf("ë‹¹ì‹ ì´ ì…ë ¥í•œ ìˆ«ì ë”í•˜ê¸° 10ì€ : %d ", sumNumber);
 		
 		System.out.print('\n');
 		System.out.println();
-		System.out.println("Ã¹¹øÂ° ¼ıÀÚ¸¦ ÀÔ·ÂÇØÁÖ¼¼¿ä!");
+		
+		System.out.println("ì²«ë²ˆì§¸ ìˆ«ìë¥¼ ì…ë ¥í•´ì£¼ì„¸ìš”");
 		double fN = scan1.nextDouble();
-		System.out.println("µÎ¹øÂ° ¼ıÀÚ¸¦ ÀÔ·ÂÇØÁÖ¼¼¿ä!");
+		System.out.println("ë‘ë²ˆì§¸ ìˆ«ìë¥¼ ì…ë ¥í•´ì£¼ì„¸ìš”");
 		double sN = scan1.nextDouble();
 		double sum = fN + sN;
 		
-		System.out.printf("%f¿Í %fÀÇ ÇÕÀº %fÀÔ´Ï´Ù.", fN, sN, sum);
+		System.out.printf("%fì™€ %fì˜ í•©ì€ %f ì…ë‹ˆë‹¤.", fN, sN, sum);
 		
  }
 }

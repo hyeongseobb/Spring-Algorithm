@@ -2,14 +2,10 @@
 public class Java2 {
 	public static void main(String[] args) {
 		
-
-		//±âº»ÀÚ·áÇü 4°¡Áö ¿¬½À
-	int a;
-	a = 10;
-	double b;
-	b = 9.9999;
+	int a = 10;
+	double b = 9.9999;
 	boolean c = true;
-	char d = '¼·';
+	char d = 'ì„­';
 	boolean f = false;
 	float g = (float) 6.66666;
 	

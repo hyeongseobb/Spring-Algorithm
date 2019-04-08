@@ -18,7 +18,7 @@ public class Attack {
 			avoidActive = false;
 			whetherActive = random.nextInt(100);
 			int whetherCritical;
-			if (parainfo.criProbabilty - 1 <= whetherActive) {
+			if (parainfo.criProbability - 1 <= whetherActive) {
 				whetherCritical = 1;
 				this.criticalActive = true;
 			} else {

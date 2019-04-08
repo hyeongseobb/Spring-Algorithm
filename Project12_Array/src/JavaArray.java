@@ -23,5 +23,11 @@ public class JavaArray {
 		// System.arraycopy()를 이용하면 공간을 새로 만들어 값을 넣을 수 있음.
 		
 		System.out.println(Arrays.toString(arr)); //for문 필요없이 배열자체를 출력해주는것.
+		
+		int[] array = {10,20,30,40,50};
+		
+		for(int value : array) {
+			System.out.print(value);
+		}
 	}
 }

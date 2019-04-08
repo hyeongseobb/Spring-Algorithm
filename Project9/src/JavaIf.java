@@ -6,7 +6,6 @@ public class JavaIf {
 		int b = 3;
 		boolean c;
 		
-		// °ıÈ£¸¦ ²À ³Ö¾î ¿¬»ê¼ø¼­¸¦ Á¤ÇØÁÖÀÚ!
 		c = (a != b) && (a > b);
 		System.out.print(c);
 		System.out.println();
@@ -15,13 +14,13 @@ public class JavaIf {
 		int num = 5;
 		
 		if(num < 5) {
-			System.out.println("numÀº 5º¸´Ù ÀÛ´Ù.");
+			System.out.println("numì€ 5ë³´ë‹¤ ì‘ë‹¤.");
 		}
 		else if(num > 5) {
-			System.out.println("numÀº 5º¸´Ù Å©´Ù.");
+			System.out.println("numì€ 5ë³´ë‹¤ í¬ë‹¤.");
 		}
 		else {
-			System.out.println("num°ú 5´Â °°´Ù.");
+			System.out.println("numì€ 5ì™€ ê°™ë‹¤.");
 		}
 			
 	}

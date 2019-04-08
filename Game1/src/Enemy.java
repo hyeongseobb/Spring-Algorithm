@@ -5,14 +5,14 @@ import java.util.Random;
 public class Enemy {
 	String name = "";
 	int hp = 0;
-	int criProbabilty = 0;
+	int criProbability = 0;
 	double criDamage = 0;
 	
 	//생성자만들기 생성자명은 클래스명과 동일
-	Enemy (String name, int hp, int criProbabilty, double criDamage) {
+	Enemy (String name, int hp, int criProbability, double criDamage) {
 		this.name = name;
 		this.hp = hp;
-		this.criProbabilty = criProbabilty;
+		this.criProbability = criProbability;
 		this.criDamage = criDamage;
 	}
 	

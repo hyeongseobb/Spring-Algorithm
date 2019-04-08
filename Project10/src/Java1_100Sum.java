@@ -6,8 +6,8 @@ public class Java1_100Sum {
 	
 		int sum0 = 0;
 		for(int i = 0; i < 100; i++) {
-				int number = i + 1;
-				sum0 = sum0 + number;
+			int number = i + 1;
+			sum0 = sum0 + number;
 		}
 		System.out.println("1부터 100까지의 합은 : " + sum0);
 		
@@ -38,7 +38,7 @@ public class Java1_100Sum {
 			if(i % 2 == 1) {
 				sum1 = sum1 + i;
 			}
-			else if(i % 2 == 0) {
+			else {
 				sum2 = sum2 + i;
 			}
 		}

@@ -5,7 +5,7 @@ public class JavaScore2 {
 		
 		Scanner sc = new Scanner(System.in);
 	
-		 System.out.println("첫번째 학생의 점수는 : ");
+		System.out.println("첫번째 학생의 점수는 : ");
 		int firstScore = sc.nextInt();
 		
 		System.out.println("두번째 학생의 점수는 : ");

@@ -4,58 +4,58 @@ public class JavaScoreSort {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		
-		System.out.println("±è¹ÌÁ¤ÀÇ ±¹¾î Á¡¼ö : ");
+		System.out.println("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ : ");
 		int studentScore1 = sc.nextInt();
 		
-		System.out.println("¹ÚÃ¶¼öÀÇ ±¹¾î Á¡¼ö : ");
+		System.out.println("ï¿½ï¿½Ã¶ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ : ");
 		int studentScore2 = sc.nextInt();
 		
-		System.out.println("ÀÌÇÑ¼ÖÀÇ ±¹¾î Á¡¼ö : ");
+		System.out.println("ï¿½ï¿½ï¿½Ñ¼ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ : ");
 		int studentScore3 = sc.nextInt();
 		
-		//¸ðµÎ´Ù µ¿Á¡ÀÎ °æ¿ì
+		//ï¿½ï¿½Î´ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½
 		if(studentScore1 == studentScore2 && studentScore2 == studentScore3){
-			System.out.println("°øµ¿ ÀÏµî");
+			System.out.println("ï¿½ï¿½ï¿½ï¿½ ï¿½Ïµï¿½");
 		}
 		
-		//¼øÀ§°¡ ¸íÈ®ÇÏ°Ô ¸Å°ÜÁö´Â °æ¿ì
+		//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½È®ï¿½Ï°ï¿½ ï¿½Å°ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½
 		else if(studentScore1 > studentScore2 && studentScore2 > studentScore3){
-			System.out.println("±è¹ÌÁ¤ ÇÐ»ý 1µî, ¹ÚÃ¶¼ö ÇÐ»ý 2µî, ÀÌÇÑ¼Ö ÇÐ»ý 3µî");
+			System.out.println("ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ð»ï¿½ 1ï¿½ï¿½, ï¿½ï¿½Ã¶ï¿½ï¿½ ï¿½Ð»ï¿½ 2ï¿½ï¿½, ï¿½ï¿½ï¿½Ñ¼ï¿½ ï¿½Ð»ï¿½ 3ï¿½ï¿½");
 		}
 		else if(studentScore2 < studentScore3 && studentScore3 < studentScore1){
-			System.out.println("±è¹ÌÁ¤ ÇÐ»ý 1µî, ¹ÚÃ¶¼ö ÇÐ»ý 3µî, ÀÌÇÑ¼Ö ÇÐ»ý 2µî");
+			System.out.println("ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ð»ï¿½ 1ï¿½ï¿½, ï¿½ï¿½Ã¶ï¿½ï¿½ ï¿½Ð»ï¿½ 3ï¿½ï¿½, ï¿½ï¿½ï¿½Ñ¼ï¿½ ï¿½Ð»ï¿½ 2ï¿½ï¿½");
 		}
 		else if(studentScore2 < studentScore1 && studentScore1 < studentScore3){
-			System.out.println("±è¹ÌÁ¤ ÇÐ»ý 2µî, ¹ÚÃ¶¼ö ÇÐ»ý 3µî, ÀÌÇÑ¼Ö ÇÐ»ý 1µî");
+			System.out.println("ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ð»ï¿½ 2ï¿½ï¿½, ï¿½ï¿½Ã¶ï¿½ï¿½ ï¿½Ð»ï¿½ 3ï¿½ï¿½, ï¿½ï¿½ï¿½Ñ¼ï¿½ ï¿½Ð»ï¿½ 1ï¿½ï¿½");
 		}
 		else if(studentScore3 < studentScore1 && studentScore1 < studentScore2){
-			System.out.println("±è¹ÌÁ¤ ÇÐ»ý 2µî, ¹ÚÃ¶¼ö ÇÐ»ý 1µî, ÀÌÇÑ¼Ö ÇÐ»ý 3µî");
+			System.out.println("ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ð»ï¿½ 2ï¿½ï¿½, ï¿½ï¿½Ã¶ï¿½ï¿½ ï¿½Ð»ï¿½ 1ï¿½ï¿½, ï¿½ï¿½ï¿½Ñ¼ï¿½ ï¿½Ð»ï¿½ 3ï¿½ï¿½");
 		}
 		else if(studentScore1 < studentScore2 && studentScore2 < studentScore3){
-			System.out.println("±è¹ÌÁ¤ ÇÐ»ý 3µî, ¹ÚÃ¶¼ö ÇÐ»ý 2µî, ÀÌÇÑ¼Ö ÇÐ»ý 1µî");
+			System.out.println("ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ð»ï¿½ 3ï¿½ï¿½, ï¿½ï¿½Ã¶ï¿½ï¿½ ï¿½Ð»ï¿½ 2ï¿½ï¿½, ï¿½ï¿½ï¿½Ñ¼ï¿½ ï¿½Ð»ï¿½ 1ï¿½ï¿½");
 		}
 		else if (studentScore1 < studentScore3 && studentScore3 < studentScore2){
-			System.out.println("±è¹ÌÁ¤ ÇÐ»ý 3µî, ¹ÚÃ¶¼ö ÇÐ»ý 1µî, ÀÌÇÑ¼Ö ÇÐ»ý 2µî");
+			System.out.println("ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ð»ï¿½ 3ï¿½ï¿½, ï¿½ï¿½Ã¶ï¿½ï¿½ ï¿½Ð»ï¿½ 1ï¿½ï¿½, ï¿½ï¿½ï¿½Ñ¼ï¿½ ï¿½Ð»ï¿½ 2ï¿½ï¿½");
 		}
 		
-		//°øµ¿ 2µîÀÎ°æ¿ì
+		//ï¿½ï¿½ï¿½ï¿½ 2ï¿½ï¿½ï¿½Î°ï¿½ï¿½
 		else if (studentScore1 == studentScore2 && studentScore1 < studentScore3){
-			System.out.println("±è¹ÌÁ¤ ¹ÚÃ¶¼ö ÇÐ»ý °øµ¿2µî , ÀÌÇÑ¼Ö ÇÐ»ý 1µî");
+			System.out.println("ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½Ã¶ï¿½ï¿½ ï¿½Ð»ï¿½ ï¿½ï¿½ï¿½ï¿½2ï¿½ï¿½ , ï¿½ï¿½ï¿½Ñ¼ï¿½ ï¿½Ð»ï¿½ 1ï¿½ï¿½");
 		}
 		else if (studentScore1 == studentScore2 && studentScore2 > studentScore3){
-			System.out.println("±è¹ÌÁ¤ ¹ÚÃ¶¼ö ÇÐ»ý °øµ¿ 1µî , ÀÌÇÑ¼Ö ÇÐ»ý 3µî");
+			System.out.println("ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½Ã¶ï¿½ï¿½ ï¿½Ð»ï¿½ ï¿½ï¿½ï¿½ï¿½ 1ï¿½ï¿½ , ï¿½ï¿½ï¿½Ñ¼ï¿½ ï¿½Ð»ï¿½ 3ï¿½ï¿½");
 		}
 		else if (studentScore1 == studentScore3 && studentScore1 < studentScore2){
-			System.out.println("±è¹ÌÁ¤ ÀÌÇÑ¼Ö ÇÐ»ý °øµ¿2µî , ¹ÚÃ¶¼ö ÇÐ»ý 1µî");
+			System.out.println("ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Ñ¼ï¿½ ï¿½Ð»ï¿½ ï¿½ï¿½ï¿½ï¿½2ï¿½ï¿½ , ï¿½ï¿½Ã¶ï¿½ï¿½ ï¿½Ð»ï¿½ 1ï¿½ï¿½");
 		}
 		else if (studentScore1 == studentScore3 && studentScore1 > studentScore2){
-			System.out.println("±è¹ÌÁ¤ ÀÌÇÑ¼Ö ÇÐ»ý °øµ¿ 1µî , ¹ÚÃ¶¼ö ÇÐ»ý 3µî");
+			System.out.println("ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Ñ¼ï¿½ ï¿½Ð»ï¿½ ï¿½ï¿½ï¿½ï¿½ 1ï¿½ï¿½ , ï¿½ï¿½Ã¶ï¿½ï¿½ ï¿½Ð»ï¿½ 3ï¿½ï¿½");
 		}
 		else if (studentScore2 == studentScore3 && studentScore2 < studentScore1){
-			System.out.println("¹ÚÃ¶¼ö ÀÌÇÑ¼Ö ÇÐ»ý °øµ¿2µî , ±è¹ÌÁ¤ ÇÐ»ý 1µî");
+			System.out.println("ï¿½ï¿½Ã¶ï¿½ï¿½ ï¿½ï¿½ï¿½Ñ¼ï¿½ ï¿½Ð»ï¿½ ï¿½ï¿½ï¿½ï¿½2ï¿½ï¿½ , ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ð»ï¿½ 1ï¿½ï¿½");
 		}
 		else if (studentScore2 == studentScore3 && studentScore3 > studentScore1){
-			System.out.println("¹ÚÃ¶¼ö ÀÌÇÑ¼Ö ÇÐ»ý °øµ¿ 1µî , ±è¹ÌÁ¤ ÇÐ»ý 3µî");
+			System.out.println("ï¿½ï¿½Ã¶ï¿½ï¿½ ï¿½ï¿½ï¿½Ñ¼ï¿½ ï¿½Ð»ï¿½ ï¿½ï¿½ï¿½ï¿½ 1ï¿½ï¿½ , ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ð»ï¿½ 3ï¿½ï¿½");
 		}
 	}
 }

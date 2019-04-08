@@ -4,7 +4,7 @@ public class JavaForContinue {
 		for (int i = 0; i < 11; i++) {
 			if(i == 9) {
 				continue;
-				//continueÀÇ 9¿¡¼­´Â Ãâ·ÂÀÌ µÇÁö¾Ê°í À§ÀÇ for¹®À¸·Î ´Ù½Ã µ¹¾Æ°£´Ù.
+				//ifë¬¸ ì¡°ê±´ì„ ì¶©ì¡±ì‹œí‚¬ê²½ìš° ìœ„ì˜ ìˆœí™˜ë¬¸ìœ¼ë¡œ ê°„ë‹¤.
 			}
 		System.out.println(i);
 		}

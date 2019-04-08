@@ -2,39 +2,10 @@ import java.util.Scanner;
 
 public class Java4 {
 	public static void main(String[] args) {
-		System.out.println("È­¸é¿¡ ¼ıÀÚ¸¦ ÀÔ·ÂÇØÁÖ¼¼¿ä!");
+		System.out.println("ìˆ«ìë¥¼ ì…ë ¥í•´ì£¼ì„¸ìš”.");
 		Scanner s = new Scanner(System.in);
 		int inputNumber = s.nextInt();
-		System.out.println("´ç½ÅÀÌ ÀÔ·ÂÇÑ ¼ıÀÚ´Â");
-		System.out.println(inputNumber);
-		System.out.print('\n');
-		
-		System.out.println();
-		System.out.println("Ã¹¹øÂ° ¼ıÀÚ ÀÔ·Â ¿ä¸Á");
-		int iN3 = s.nextInt();
-		System.out.println();
-		System.out.println("µÎ¹øÂ° ¼ıÀÚ ÀÔ·Â ¿ä¸Á");
-		int iN4 = s.nextInt();
-		System.out.println(iN3*iN4);
-		
-		System.out.println();
-		System.out.println("´ç½ÅÀº ¸î»ìÀÌ½Ê´Ï±î?");
-		Scanner y = new Scanner(System.in);
-		int iN = y.nextInt();
-		System.out.println("´ç½ÅÀÇ ³ªÀÌ´Â");
-		System.out.print('\"');
-		System.out.print(iN);
-		System.out.print('\"');
-		System.out.print("¼¼ ÀÔ´Ï´Ù.");
-		System.out.print('\n');
-		/*Scanner y = new Scanner(System.in);
-		   <- »õ·Î Á¤ÀÇÇÒ ÇÊ¿ä¾øÀÌ À§¿¡¸¸µç°Í ±×´ë·Î »ç¿ë°¡´ÉÇÑ °ÍÀ» ¾Æ·§ÁÙ ÄÚµå¸¦ ÅëÇØ º¼ ¼ö ÀÖÀ½.*/
-		
-		System.out.print('\n');
-		System.out.println("¶Ç ¼ıÀÚ¸¦ ÀÔ·ÂÇØ ÁÖ¼¼¿ä!");
-		int iN2 = s.nextInt();
-		System.out.println("´ç½ÅÀÌ ÀÔ·ÂÇÑ ¼ıÀÚ +10Àº");
-		System.out.print(iN2+10);
-		
+		System.out.println("ë‹¹ì‹ ì´ ì…ë ¥í•œ ìˆ«ìëŠ” : " + inputNumber);
+	
 	}	
 }

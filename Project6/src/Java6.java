@@ -4,7 +4,7 @@ public class Java6 {
 		
 		int a = 3;
 		int b = 10;
-		double c = (double)b/(double)a;
+		double c = (double)b / a;
 		
 		System.out.println (c);
 		
