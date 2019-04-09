@@ -1,4 +1,4 @@
-package kopoAwtProject;
+
 
 import java.awt.EventQueue;
 
@@ -25,8 +25,8 @@ import java.awt.event.MouseEvent;
 
 public class selloutMgmtView {
 
-	String selloutTable = "KOPO_PRODUCT_VOLUME_HK";
-	String regionTable = "REGION_MASTER_HK";
+	String selloutTable = "KOPO_PRODUCT_VOLUME_HS";
+	String regionTable = "REGION_MASTER_HS";
 	
 	private JFrame frame;
 	private JTable tableSellout;
@@ -35,9 +35,9 @@ public class selloutMgmtView {
 
 	// DataBase Connection information
 	String JDBC_DRIVER = "oracle.jdbc.OracleDriver";  
-	String DB_URL = "jdbc:oracle:thin:@127.0.0.1:1521/xe";
-	String USERNAME = "kopo";
-	String PASSWORD = "kopo";
+	String DB_URL = "jdbc:oracle:thin:@192.168.110.9:1522/xe";
+	String USERNAME = "system";
+	String PASSWORD = "manager";
 			
 	private Connection conn = null;
 	private PreparedStatement stmt = null;
@@ -147,7 +147,7 @@ public class selloutMgmtView {
 		JButton btnUpdateSellout = new JButton("\uC218\uC815");
 		btnUpdateSellout.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				int response = JOptionPane.showConfirmDialog (null, "¼±ÅÃÇÑ ·¹ÄÚµåÀÇ ÆÇ¸Å·®¸¸ ¾÷µ¥ÀÌÆ®µË´Ï´Ù.","Confirm",JOptionPane.YES_NO_OPTION, JOptionPane.QUESTION_MESSAGE);
+				int response = JOptionPane.showConfirmDialog (null, "íŒë§¤ëŸ‰ ì •ë³´ë§Œ ë³€ê²½ ê°€ëŠ¥í•©ë‹ˆë‹¤.","Confirm",JOptionPane.YES_NO_OPTION, JOptionPane.QUESTION_MESSAGE);
 
 			    if (response == JOptionPane.YES_OPTION) {	
 				try {
@@ -167,7 +167,7 @@ public class selloutMgmtView {
 		btnDeleteSellout.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 
-				int response = JOptionPane.showConfirmDialog (null, "¼±ÅÃÇÑ ·¹ÄÚµå¸¸ »èÁ¦µË´Ï´Ù.","Confirm",JOptionPane.YES_NO_OPTION, JOptionPane.QUESTION_MESSAGE);
+				int response = JOptionPane.showConfirmDialog (null, "ì„ íƒí•œ ì§€ì—­/ìƒí’ˆ/ì—°ì£¼ì°¨ ì‹¤ì ì •ë³´ë§Œ ì‚­ì œë©ë‹ˆë‹¤.","Confirm",JOptionPane.YES_NO_OPTION, JOptionPane.QUESTION_MESSAGE);
 
 			    if (response == JOptionPane.YES_OPTION) { //The ISSUE is here	
 				
@@ -193,8 +193,8 @@ public class selloutMgmtView {
 		frame.getContentPane().add(textRegion);
 		textRegion.setColumns(10);
 		
-		//table ÃÊ±â ¼³Á¤
-		String[] columnNames = { "Áö¿ªID","Áö¿ª¸í","»óÇ°Á¤º¸","¿¬ÁÖÂ÷","ÆÇ¸Å·®" }; 
+		//table ï¿½Ê±ï¿½ ï¿½ï¿½ï¿½ï¿½
+		String[] columnNames = { "REGION_ID","REGION_NAME","PRODUCT","YEARWEEK","QTY" }; 
 		
 		scrollPane.setViewportView(tableSellout);
 		tableSellout.setModel(new DefaultTableModel(

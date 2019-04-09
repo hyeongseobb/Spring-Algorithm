@@ -22,6 +22,6 @@ public class JavaIf {
 		else {
 			System.out.println("num은 5와 같다.");
 		}
-			
+
 	}
 }

@@ -1,4 +1,3 @@
-package kopoAwtProject;
 
 import java.awt.EventQueue;
 
@@ -23,8 +22,8 @@ import javax.swing.JOptionPane;
 
 public class regionMgmtView {
 
-	String selloutTable = "KOPO_PRODUCT_VOLUME_HK";
-	String regionTable = "REGION_MASTER_HK";
+	String selloutTable = "KOPO_PRODUCT_VOLUME_HS";
+	String regionTable = "REGION_MASTER_HS";
 	
 	private JFrame frame;
 	private JTextField textRegionName;
@@ -33,9 +32,9 @@ public class regionMgmtView {
 
 	// DataBase Connection information
 	String JDBC_DRIVER = "oracle.jdbc.OracleDriver";  
-	String DB_URL = "jdbc:oracle:thin:@127.0.0.1:1521/xe";
-	String USERNAME = "kopo";
-	String PASSWORD = "kopo";
+	String DB_URL = "jdbc:oracle:thin:@192.168.110.9:1522/xe";
+	String USERNAME = "system";
+	String PASSWORD = "manager";
 
 			
 	private Connection conn = null;
@@ -48,6 +47,7 @@ public class regionMgmtView {
 	private JLabel lblNewLabel;
 	private JLabel label;
 	private JLabel label_1;
+	private JTextField selectedRegion;
 	/**
 	 * Launch the application.
 	 */
@@ -101,6 +101,7 @@ public class regionMgmtView {
 			public void actionPerformed(ActionEvent e) {
 				
 					try {
+						// Îç∞Ïù¥ÌÑ∞ Ï°∞Ìöå Ìï®Ïàò
 						dataSelect();
 					} catch (SQLException e1) {
 						// TODO Auto-generated catch block
@@ -156,7 +157,7 @@ public class regionMgmtView {
 		btnRegionDelete.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				
-				int response = JOptionPane.showConfirmDialog (null, "ø¨∞¸µ» ∆«∏≈Ω«¿˚ ¿⁄∑·µµ ªË¡¶µÀ¥œ¥Ÿ.","Confirm",JOptionPane.YES_NO_OPTION, JOptionPane.QUESTION_MESSAGE);
+				int response = JOptionPane.showConfirmDialog (null, "Ïó∞Í¥ÄÎêú ÏÑ†ÌÉù ÏßÄÏó≠Ïùò Ïã§Ï†ÅÏ†ïÎ≥¥Í∞Ä Ìï®Íºê ÏÇ≠Ï†úÎê©ÎãàÎã§. Í∑∏ÎûòÎèÑ ÏßÑÌñâÌïòÏãúÍ≤†ÏäµÎãàÍπå?","Confirm",JOptionPane.YES_NO_OPTION, JOptionPane.QUESTION_MESSAGE);
 
 			    if (response == JOptionPane.YES_OPTION) {
 				
@@ -180,8 +181,8 @@ public class regionMgmtView {
 		tableRegion = new JTable();
 		scrollPane.setViewportView(tableRegion);
 		
-		//table √ ±‚ º≥¡§
-		String[] columnNames = { "¡ˆø™ID","¡ˆø™∏Ì"}; 
+		//table ÔøΩ ±ÔøΩ ÔøΩÔøΩÔøΩÔøΩ
+		String[] columnNames = { "REGION_ID","REGION_NAME"}; 
 		
 		tableRegion.setModel(new DefaultTableModel(
 			new Object[][] {
@@ -201,6 +202,16 @@ public class regionMgmtView {
 		label_1.setBounds(58, 98, 62, 18);
 		frame.getContentPane().add(label_1);
 		
+		selectedRegion = new JTextField();
+		selectedRegion.setEditable(false);
+		selectedRegion.setColumns(10);
+		selectedRegion.setBounds(424, 175, 116, 24);
+		frame.getContentPane().add(selectedRegion);
+		
+		JLabel lblId = new JLabel("ÏÑ†ÌÉùÏßÄÏó≠ ID");
+		lblId.setBounds(330, 178, 80, 18);
+		frame.getContentPane().add(lblId);
+		
 		model = (DefaultTableModel)tableRegion.getModel();
 		
 		tableRegion.addMouseListener(new MouseAdapter() {
@@ -209,6 +220,7 @@ public class regionMgmtView {
 			       
 				int selectedRowIndex = tableRegion.getSelectedRow();
 				
+				  selectedRegion.setText(model.getValueAt(selectedRowIndex, 0).toString());
 			      textRegionIdU.setText(model.getValueAt(selectedRowIndex, 0).toString());
 			      textRegionNameU.setText(model.getValueAt(selectedRowIndex, 1).toString());
 			}
@@ -267,9 +279,9 @@ public class regionMgmtView {
 	     stmt.setString(1, regionId);
 	     stmt.setString(2, regionName );
 	     
-         System.out.println("Insert operation completed");
-
          stmt.executeUpdate();
+         
+         System.out.println("Insert operation completed");
 
 	      } catch (SQLException ex) {
 			ex.printStackTrace();
@@ -284,19 +296,19 @@ public class regionMgmtView {
        int selectedRowIndex = tableRegion.getSelectedRow();
 	       
        String selectedRegionId = model.getValueAt(selectedRowIndex, 0).toString();
-       String selectedRegionName = model.getValueAt(selectedRowIndex, 1).toString();
-          
-       String regionNameU = textRegionNameU.getText();
+       String updateRegionId = textRegionIdU.getText();
+       String updateRegionName = textRegionNameU.getText();
+       
 
-       String updateSql  = "UPDATE " + regionTable + " SET REGIONNAME = ?"
+       String updateSql  = "UPDATE " + regionTable + " SET REGIONID = ?, REGIONNAME = ?"
 	     		+ " WHERE REGIONID = ? ";
         
 		try {
 	        	
 	         stmt =  conn.prepareStatement(updateSql);
-	         stmt.setString(1, regionNameU);
-	         stmt.setString(2, selectedRegionId);
-	         
+	         stmt.setString(1, updateRegionId);
+	         stmt.setString(2, updateRegionName);
+	         stmt.setString(3, selectedRegionId);
 	         System.out.println("update operation completed");
 
 	         stmt.executeUpdate();
@@ -313,9 +325,7 @@ public class regionMgmtView {
 		
 		int selectedRowIndex = tableRegion.getSelectedRow();
 	       
-	       String selectedRegionId = model.getValueAt(selectedRowIndex, 0).toString();
-	       String selectedRegionName = model.getValueAt(selectedRowIndex, 1).toString();
-
+	       String selectedRegionId = selectedRegion.getText();
 
 	       String updateSql  = "DELETE FROM  " + regionTable + " WHERE REGIONID = ?" ;
 	        
