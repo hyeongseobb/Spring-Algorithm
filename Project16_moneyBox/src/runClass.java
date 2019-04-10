@@ -8,6 +8,5 @@ public class runClass {
 		box1.deposit(5000,"");
 		box1.deposit(100,"거지");
 		box1.deposit(500,"crash");
-		
 	}
 }
