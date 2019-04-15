@@ -1,4 +1,4 @@
-package jyQuiz;
+package JyQuiz;
 
 public class quizQuo {
 	//최종 몫 구하기

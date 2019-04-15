@@ -1,4 +1,4 @@
-package jyQuiz;
+package JyQuiz;
 import java.util.Scanner;
 
 public class quizMain {	

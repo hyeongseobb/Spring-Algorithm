@@ -1,4 +1,4 @@
-package jyQuiz;
+package JyQuiz;
 
 //import java.io.BufferedReader;
 //import java.io.IOException;
