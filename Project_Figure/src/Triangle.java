@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Triangle extends Figure {
+public class Triangle extends Figure implements FugureRule {
 	int lowerBase;
 	int height;
 

@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class RegularPentagon extends Figure {
+public class RegularPentagon extends Figure implements FugureRule {
 	Scanner scanner = new Scanner(System.in);
 	private double valueSide;
 

@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public abstract class Figure {
+public abstract class Figure implements FugureRule {
 	String name;
 	double area;
 

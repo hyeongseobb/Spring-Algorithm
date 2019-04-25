@@ -25,5 +25,7 @@ public class RunClass2 {
 		for(int i = 0; i < student.length; i++) {
 			System.out.print(student[i] + "\n");
 		}
+		
+		
 	}
 }

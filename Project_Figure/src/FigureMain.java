@@ -41,8 +41,8 @@ public class FigureMain {
 
 		System.out.println(figure.name + "을 선택하셨습니다.");
 
-		figure.inputValue();
-		figure.cal();
-		figure.printResult();
+		figure.inputValue(); //값입력함수실행
+		figure.cal();//계산함수실행
+		figure.printResult(); //프린트함수실행
 	}
 }

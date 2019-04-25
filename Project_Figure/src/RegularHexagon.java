@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class RegularHexagon extends Figure {
+public class RegularHexagon extends Figure implements FugureRule {
 	Scanner scanner = new Scanner(System.in);
 	private double valueSide;
 

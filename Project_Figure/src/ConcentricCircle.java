@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class ConcentricCircle extends Figure {
+public class ConcentricCircle extends Figure implements FugureRule {
 	public int r1;
 	public int r2;
 	public double pi = Math.PI;

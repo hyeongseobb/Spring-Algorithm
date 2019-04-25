@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Circle extends Figure {
+public class Circle extends Figure implements FugureRule {
 	double pi = Math.PI;
 	int r;
 

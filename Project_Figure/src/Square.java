@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Square extends Figure {
+public class Square extends Figure implements FugureRule {
 	int low = 0;
 	int hight = 0;
 

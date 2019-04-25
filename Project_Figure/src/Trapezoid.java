@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Trapezoid extends Figure {
+public class Trapezoid extends Figure implements FugureRule {
 	Scanner scanner = new Scanner(System.in);
 	private double valueLowerSide;
 	private double valueUpperSide;
