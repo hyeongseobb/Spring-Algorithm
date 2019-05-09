@@ -50,7 +50,7 @@ public class JavaStar1 {
 				System.out.print("*");
 			}
 			System.out.println();
-		}				
+		}
 	}
 }
 
