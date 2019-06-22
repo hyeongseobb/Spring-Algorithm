@@ -19,14 +19,12 @@ public class Player {
 		this.defensePower = rand.nextInt(100);
 		this.defenseRate = rand.nextInt(100);
 	}
-	
 	Player(String id, String password, String name) {
 		this();
+		this.name = name;
 		this.id = id;
 		this.password = password;
-		this.name = name;
 	}
-	
 	public String toTableTagString() {
 		String tagString = "";
 		tagString = tagString + "<li>";
@@ -36,19 +34,19 @@ public class Player {
 		tagString = tagString + "<h3>";
 		tagString = tagString + this.name;
 		tagString = tagString + "</h3>";
-		tagString = tagString + "<span>공격력 :</span>";
+		tagString = tagString + "<span>공격력 : </span> ";
 		tagString = tagString + this.attackPower;
 		tagString = tagString + "<br />";
-		tagString = tagString + "<span>공격확률 :</span>";
+		tagString = tagString + "<span>공격확률 : </span> ";
 		tagString = tagString + this.attackRate;
 		tagString = tagString + "<br />";
-		tagString = tagString + "<span>방어력 :</span>";
+		tagString = tagString + "<span>방어력 : </span> ";
 		tagString = tagString + this.defensePower;
 		tagString = tagString + "<br />";
-		tagString = tagString + "<span>방어확률 :</span>";
+		tagString = tagString + "<span>방어확률 : </span> ";
 		tagString = tagString + this.defenseRate;
 		tagString = tagString + "<br />";
-		tagString = tagString + "<button>선택</button>";
+		tagString = tagString + "<button>선택</button>";
 		tagString = tagString + "</li>";
 		return tagString;
 	}

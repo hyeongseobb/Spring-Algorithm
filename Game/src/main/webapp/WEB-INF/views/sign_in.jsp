@@ -1,5 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-	pageEncoding="UTF-8"%>
+    pageEncoding="UTF-8"%>
 <!doctype html>
 <html lang="ko">
 
@@ -15,9 +15,9 @@
       <div class="logo_sec">
         <h3>게임</h3>
       </div>
-      <form class="login_sec" action="do_login" method="post">
-        <input type="text" placeholder="아이디" class="login_input" required="required" name="id"/>
-        <input type="password" placeholder="패스워드" class="login_input" required="required" name="password"/>
+      <form class="login_sec" action="do_login" method="POST">
+        <input type="text" placeholder="아이디" class="login_input" required="required" name="id" />
+        <input type="password" placeholder="패스워드" class="login_input" required="required" name="password" />
         <input type="submit" class="login_btn" value="로그인" />
       </form>
     </div>

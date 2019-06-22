@@ -153,6 +153,7 @@ public class DBCommon<T> {
 				this.open();
 			}
 			String query = "UPDATE " + this.tableName + " SET " + queryString + " WHERE idx=" + whereIdx + ";";
+			System.out.println(query);
 			Statement statement = this.connection.createStatement();
 			int result = statement.executeUpdate(query);
 			statement.close();
@@ -286,7 +287,7 @@ public class DBCommon<T> {
 	}
 
 	public int signIn(String id, String password) {
-		int userIdx = 0;
+		int userIdx = 0;;
 		try {
 			if (this.connection == null) {
 				this.open();

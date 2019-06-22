@@ -1,5 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-	pageEncoding="UTF-8"%>
+    pageEncoding="UTF-8"%>
 <!doctype html>
 <html lang="ko">
 
@@ -13,28 +13,32 @@
 <body>
   <div id="wrap">
     <div class="top_button_section">
-      <form>
-        <input type="text" name="select1" />
-        <input type="text" name="select2" />
+      <form action="do_battle">
+        <input type="text" name="select1" value="${select1_idx}" />
+        <input type="text" name="select2" value="${select2_idx}" />
+        <%-- 캐시가남아 있는 문제를 해결하기 위해 임의로 url에 random숫자 넣어줌--%>
+        <input type="hidden" name="random" value="${random_number}" />
       </form>
       <button class="turn">턴 진행</button>
     </div>
     <div class="battle_section">
       <div class="player1">
-        <span class="no">1</span>
-        <h3>ì´ë¦</h3>
-        <span>ê³µê²©ë ¥ : </span> 100<br />
-        <span>ë°©ì´ë ¥ : </span> 100<br />
-        <span>ê³µê²©íë¥  : </span> 100<br />
-        <span>ë°©ì´íë¥  : </span> 100<br />
+        <span class="no">${select1_idx}</span>
+        <h3>${select1_name}</h3>
+        <span>공격력 : </span> ${select1_attackPower}<br />
+        <span>공격확률 : </span> ${select1_attackRate}<br />
+        <span>방어력  : </span> ${select1_defensePower}<br />
+        <span>방어확률  : </span> ${select1_defenseRate}<br />
+        <span>HP  : </span> ${select1_hp}<br />
       </div>
       <div class="player2">
-        <span class="no">2</span>
-        <h3>ì´ë¦</h3>
-        <span>ê³µê²©ë ¥ : </span> 100<br />
-        <span>ë°©ì´ë ¥ : </span> 100<br />
-        <span>ê³µê²©íë¥  : </span> 100<br />
-        <span>ë°©ì´íë¥  : </span> 100<br />
+        <span class="no">${select2_idx}</span>
+        <h3>${select2_name}</h3>
+        <span>공격력 : </span> ${select2_attackPower}<br />
+        <span>공격확률 : </span> ${select2_attackRate}<br />
+        <span>방어력  : </span> ${select2_defensePower}<br />
+        <span>방어확률  : </span> ${select2_defenseRate}<br />
+        <span>HP  : </span> ${select2_hp}<br />
       </div>
     </div>
   </div>

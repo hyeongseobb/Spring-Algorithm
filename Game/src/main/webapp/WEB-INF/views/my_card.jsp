@@ -1,5 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-	pageEncoding="UTF-8"%>
+    pageEncoding="UTF-8"%>
 <!doctype html>
 <html lang="ko">
 
@@ -13,18 +13,21 @@
 <body>
   <div id="wrap">
     <div class="top_button_section">
-      <a href="/game" class="top_button">목록으로</a>
+      <a href="/game" class="top_button">목록으로</a>
     </div>
     <ul class="player_list">
       <li>
         <span class="no">${idx}</span>
-        <h3>${name}</h3>
+        <h3>${name}</h3>
         <span>공격력 : </span> ${attackPower}<br />
         <span>공격확률 : </span> ${attackRate}<br />
         <span>방어력  : </span> ${defensePower}<br />
         <span>방어확률  : </span> ${defenseRate}<br />
         <form action="change_card">
-        	<button>카드 변경</button>
+        	<button>카드 변경</button><br />
+        </form>
+        <form action="delete_card">
+        	<button>카드 삭제</button>
         </form>
       </li>
     </ul>
