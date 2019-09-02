@@ -21,15 +21,6 @@ public class Algorithm222 {
 		}
 	}
 	
-	//연습문제 Q3
-	static int sumOf(int[] a) {
-		int sum = 0;
-		for(int i = 0; i < a.length; i++) {
-			sum += a[i];
-		}
-		return sum;
-	}
-	
 	public static void main(String[] args) {
 		Scanner scanner = new Scanner(System.in);
 		Random random = new Random();
@@ -52,5 +43,14 @@ public class Algorithm222 {
 		}
 		System.out.println();
 		System.out.println("모든 배열 요소의 합은? " + sumOf(seobArray));
+	}
+	
+	//연습문제 Q3
+	static int sumOf(int[] a) {
+		int sum = 0;
+		for(int i = 0; i < a.length; i++) {
+			sum += a[i];
+		}
+		return sum;
 	}
 }

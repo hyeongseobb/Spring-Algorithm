@@ -1,0 +1,222 @@
+body {
+  font-size: 12px;
+  padding: 0px 0px;
+}
+
+.top_nav {
+  padding: 20px 10px;
+  background: #1245AB;
+}
+
+.top_nav a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1em; //상대사이즈(원래폰트사이즈의 1배);
+}
+
+.top_nav a:hover {
+  color: #B2CCFF;
+}
+
+table {
+  width: 100%;
+}
+
+.search_section {
+  padding: 20px 10px;
+  text-align: center;
+}
+
+.search_section seob {
+  font-size: 1.4em;
+  font-weight: bold;
+  color: #2db400;
+}
+
+.search_section input {
+  border: 3px solid #2db400;
+}
+
+.search_section button {
+  background: #2db400;
+  border: 0px;
+  color: #fff;
+  margin-left: 10px;
+  padding: 3px 10px;
+}
+
+.search_section button:hover {
+  font-size: 1.19em;
+  font-weight: bold;
+}
+
+.table_section {
+  padding: 10px;
+  text-align: center;
+}
+
+.table_section th, .table_section td {
+  padding: 5px 0px;
+  border: 1px solid #eee;
+}
+
+.table_section th {
+  background: #487BE1;
+  color: #fff;
+}
+
+.table_section tr:nth-of-type(2n) td {
+  background: #D6F0FF;
+}
+
+/*스마트폰에서의 css*/
+
+/* @media (max-width: 908px) {
+  .top_nav {
+    padding: 0px;
+    background: #fff;
+  }
+  .top_nav a {
+    display: inline-block;
+    width: 49%;
+    border: 1px solid #fff;
+    box-sizing: border-box;
+    padding: 20px 0px;
+    background: #1245AB;
+    color: #fff;
+    text-align: center;
+  }
+} */
+
+.mod_row {
+  background-color: #2db400;
+  color: #fff;
+  border: none;
+}
+
+.mod_done {
+  background-color: #2db400;
+  color: #fff;
+  border: none;
+  display: none;
+}
+
+.insert {
+  background-color: #2db400;
+  color: #fff;
+  border: none;
+}
+
+.delete {
+  background-color: #2db400;
+  color: #fff;
+  border: none;
+}
+
+.list_section {
+  padding: 10px;
+}
+
+.list_section li{
+  border: 1px solid #eee;
+  padding: 10px;
+  margin: 10px;
+  float: left;
+  width: 220px;
+  box-sizing: border-box;
+}
+
+.list_section li img{
+  width: 200px;
+  height: 170px;
+}
+
+.list_section li h3 {
+  background: #2db400;
+  color: #fff;
+  border-radius: 5px 0px;
+  padding: 2px 10px;
+  text-align: center;
+}
+
+.list_section ul:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.button_section {
+  padding: 10px;
+  text-align: right;
+}
+
+.button_section a {
+  text-decoration:  none;
+  display: inline-block;
+  padding: 5px 20px;
+  background: #2db400;
+  color: #fff;
+  border: none;
+}
+
+.button_section a:hover {
+  color: #999;
+}
+
+.row {
+  width: 80%;
+  margin: 0 auto;
+  border-bottom: 2px solid #eee;
+}
+
+.row label {
+  display: inline-block;
+  width: 20%;
+  margin: 0px 10px 0px 0px;
+  background: #eee;
+  padding: 5px 0px 5px 10px;
+  box-sizing: border-box;
+}
+
+.content h3 {
+  background: #ccc;
+  color: #fff;
+  padding: 5px 10px;
+  width: 80%;
+  margin: 20px auto 0px auto;
+  box-sizing: border-box;
+}
+
+.submit_section {
+  text-align: center;
+}
+
+.details_section {
+	padding: 10px;
+	text-align: center;
+}
+
+.details_section h3 {
+	background: #ccc;
+	color: #fff;
+	padding: 10px;
+	width: 100%;
+	box-sizing: border-box;
+}
+
+.button_center_section {
+	padding: 10px;
+	text-align: center;
+}
+
+.button_center_section a {
+	text-decoration: none;
+	display: inline-block;
+	padding: 5px 20px;
+	background: #ccc;
+	color: #333;
+}
+
+.button_center_section a:hover{
+	background: #999;
+}

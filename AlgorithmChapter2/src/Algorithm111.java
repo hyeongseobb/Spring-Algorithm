@@ -25,3 +25,4 @@ public class Algorithm111 {
 		return max;
 	}
 }
+

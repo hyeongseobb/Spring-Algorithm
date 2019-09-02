@@ -99,7 +99,6 @@ public class HomeController {
 		HashMap<String, String> user2 = new HashMap<String, String>();
 		user1 = dbCommon.detailsData(new Player(), userIdx1);
 		user2 = dbCommon.detailsData(new Player(), userIdx2);
-
 		
 		model.addAttribute("selected_user_1", dbCommon.selectDataTableTag2(new Player(), userIdx1));
 		model.addAttribute("selected_user_2", dbCommon.selectDataTableTag2(new Player(), userIdx2));

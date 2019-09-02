@@ -26,4 +26,9 @@
     <!--
     <Manager pathname="" />
     -->
+    <ResourceLink
+        name="jdbc/orcl"
+        global="jdbc/orcl"
+        auth="Container"
+        type="javax.sql.DataSource"/>
 </Context>

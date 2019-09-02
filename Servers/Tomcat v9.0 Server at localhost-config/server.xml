@@ -37,6 +37,7 @@
          UserDatabaseRealm to authenticate users
     -->
     <Resource auth="Container" description="User database that can be updated and saved" factory="org.apache.catalina.users.MemoryUserDatabaseFactory" name="UserDatabase" pathname="conf/tomcat-users.xml" type="org.apache.catalina.UserDatabase"/>
+    <Resource auth="Container" driverClassName="oracle.jdbc.OracleDriver" maxActive="50" maxWait="1000" name="jdbc/orcl" password="kopo" type="javax.sql.DataSource" url="jdbc:oracle:thin:@192.168.110.112:1521:orcl" username="kopo"/>
   </GlobalNamingResources>
 
   <!-- A "Service" is a collection of one or more "Connectors" that share
@@ -60,7 +61,7 @@
          APR (HTTP/AJP) Connector: /docs/apr.html
          Define a non-SSL/TLS HTTP/1.1 Connector on port 8080
     -->
-    <Connector connectionTimeout="20000" port="8888" protocol="HTTP/1.1" redirectPort="8443"/>
+    <Connector connectionTimeout="20000" port="8855" protocol="HTTP/1.1" redirectPort="8443"/>
     <!-- A "Connector" using the shared thread pool-->
     <!--
     <Connector executor="tomcatThreadPool"
@@ -149,7 +150,7 @@
              Note: The pattern used is equivalent to using pattern="common" -->
         <Valve className="org.apache.catalina.valves.AccessLogValve" directory="logs" pattern="%h %l %u %t &quot;%r&quot; %s %b" prefix="localhost_access_log" suffix=".txt"/>
 
-      <Context docBase="Spring111" path="/first" reloadable="true" source="org.eclipse.jst.jee.server:Spring111"/><Context docBase="Spring222" path="/second" reloadable="true" source="org.eclipse.jst.jee.server:Spring222"/><Context docBase="Spring333" path="/third" reloadable="true" source="org.eclipse.jst.jee.server:Spring333"/><Context docBase="Spring444" path="/fourth" reloadable="true" source="org.eclipse.jst.jee.server:Spring444"/><Context docBase="Spring555" path="/fifth" reloadable="true" source="org.eclipse.jst.jee.server:Spring555"/><Context docBase="BattleGame" path="/battle" reloadable="true" source="org.eclipse.jst.jee.server:BattleGame"/><Context docBase="Game" path="/game" reloadable="true" source="org.eclipse.jst.jee.server:Game"/></Host>
+      <Context docBase="Spring777" path="/wow" reloadable="true" source="org.eclipse.jst.jee.server:Spring777"/></Host>
     </Engine>
   </Service>
 </Server>
