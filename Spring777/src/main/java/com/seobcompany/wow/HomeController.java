@@ -288,5 +288,34 @@ public class HomeController {
 		}
 		return data;
 	}
+	
+//	@RequestMapping(value = "/post_update", method = RequestMethod.POST)
+//	public @ResponseBody HashMap<String, String> postUpdate(Locale locale, Model model,
+//			@RequestParam("idx") String idx, @RequestParam("title") String title, @RequestParam("description") String description) {
+//		Connection connection = null;
+//		HashMap<String, String> result = new HashMap<String, String>();
+//		try {
+//			//1. DB 연결해서 열기!
+//			Class.forName("org.sqlite.JDBC");
+//			SQLiteConfig config = new SQLiteConfig();
+//			connection = DriverManager.getConnection("jdbc:sqlite:/c:\\tomcat(apache)\\ajax.db", config.toProperties());
+//			
+//			//2. 쿼리 만들기!
+//			String query = "UPDATE post SET " + "title=" + '"' + title + '"' + ", description=" + '"' + description + '"' +  " WHERE idx=" + idx + ";";
+//			
+//			//3. 쿼리 실행시키기!
+//			System.out.println(query);
+//			Statement statement = connection.createStatement();
+//			int q = statement.executeUpdate(query);
+//			statement.close();
+//			//4. ***************DB 닫기!(꼭해주어야함)******************
+//			connection.close();
+//		} catch (Exception e) {
+//			e.printStackTrace();
+//		}
+//		//모든 api호출 할때는 request에 대한 return(response)을 발생시켜야함.
+//		result.put("result", "success");
+//		return result;
+//	}
 		
 }

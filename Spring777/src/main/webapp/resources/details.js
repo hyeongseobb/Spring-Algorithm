@@ -17,3 +17,19 @@ $(function(){
        }
    });
 });
+
+
+//$(document).on('click', '.submit_button', function(event){
+//	var idx = $(this).parents('tr').find('td').eq(0).text();
+//	$.ajax({
+//	    url:'/wow/post_update',
+//	    type: 'post',
+//	    data: {
+//	    	idx: idx
+//	    },
+//	    success:function(data){
+//	    	//새로고침 역할!!
+//	      location.href
+//	    }
+//	});
+//});
